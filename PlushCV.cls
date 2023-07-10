@@ -40,7 +40,7 @@
 \def \firstnamefont {sourcesanspro-SemiBold}
 \def \secondnamefont {sourcesanspro-light}
 \def \titlefont {\firstnamefont}
-\def \namefontsize {9.5}
+\def \namefontsize {10}
 
 %% Office Code Pro D Title:
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,7 +122,7 @@
 \def \mainfontbold {inter-light}
 % \def \mainbolditalicfont {}
 \def \mainitalicfont {inter-italic}
-\def \mainfontsize {9.5}
+\def \mainfontsize {10}
 \def \mainfonboldtsize {8}
 \def \mainsansfont {inter-light}
 
@@ -130,7 +130,7 @@
 %Used for company name and sub-skills
 \def \pathsubheadingfont {\pathtitlefont}
 \def \subheadingfont {\titlefont}
-\def \subheadingsize {12}
+\def \subheadingsize {10}
 
 %Main Job Descriptor and Location Font Definitions
 %Used for company name and sub-skills
@@ -139,7 +139,7 @@
 \def \descriptorsize {10}
 \def \pathlocationfont {\pathsubheadingfont}
 \def \locationfont {\subheadingfont}
-\def \locationsize {8pt}
+\def \locationsize {10pt}
 
 %Main Monospace Font Definitions 
 %Used for Job Title and Contact Line 
@@ -166,12 +166,10 @@ Last Updated on \today
 \end{textblock}}
 
 % Name command
-
-
 \newcommand{\namesection}[4]{
 \RaggedRight{
 \color{title}
-\fontsize{40pt}{50pt}
+\fontsize{30pt}{30pt}
 \fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1 
 \fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
 } \\[5pt]
@@ -251,4 +249,3 @@ Last Updated on \today
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}[label=\ding{212}]\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
-
